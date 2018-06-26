@@ -1,0 +1,13 @@
+name='add'
+gcc -fpic -c $name'.c'
+gcc -shared $name'.o' -o 'lib'$name'.so'
+name='deduct'
+gcc -fpic -c $name'.c'
+gcc -shared $name'.o' -o 'lib'$name'.so'
+name='multiply'
+gcc -fpic -c $name'.c'
+gcc -shared $name'.o' -o 'lib'$name'.so'
+name='divide'
+gcc -fpic -c $name'.c'
+gcc -shared $name'.o' -o 'lib'$name'.so'
+echo "fine"
